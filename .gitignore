@@ -256,3 +256,55 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+# Python virtual environments
+yolov5_venv/
+venv/
+.venv/
+env/
+.env/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.Python
+build/
+dist/
+
+# Jupyter Notebook / IPython
+.ipynb_checkpoints/
+
+# IDE specific files
+.vscode/
+.idea/
+*.iml
+
+# YOLOv5 specific files to ignore
+# Training runs and saved models
+runs/
+!runs/*.pt # Keep .pt files if you want to track specific models, but usually you don't commit these large files
+!runs/*.onnx # Keep .onnx files if you want to track specific models, but usually you don't commit these large files
+runs/detect/
+runs/train/
+runs/val/
+runs/export/
+
+# Dataset cache files
+*.cache
+labels.cache
+
+# Log files
+*.log
+*.txt.log
+
+# Data files (if they are not part of the core repository)
+# If your dataset is inside the repo, you might need to be more specific.
+# Generally, large datasets are not committed to Git.
+my_waste_dataset_yolov5/
+
+# Operating System files
+.DS_Store
+Thumbs.db
