@@ -1,0 +1,13 @@
+train: /mnt/ssd/yolov5/my_waste_dataset_yolov5/train/images
+val: /mnt/ssd/yolov5/my_waste_dataset_yolov5/valid/images
+test: /mnt/ssd/yolov5/my_waste_dataset_yolov5/test/images
+
+nc: 32
+names: ['aerosol_can', 'b', 'cardboard_box', 'clothing', 'coffee_grounds', 'cosmetic_container', 'detergent_bottle', 'egg_shells', 'food_can', 'food_jar', 'food_waste', 'glass_bottle', 'magazine', 'newspaper', 'objects', 'packaging', 'paper', 'paper_cup', 'plastic_bag', 'plastic_bottle', 'plastic_cup', 'plastic_cup_lid', 'plastic_cutlery', 'plastic_food_container', 'shoes', 'soda_bottle', 'soda_can', 'straws', 'styrofoam_cup', 'styrofoam_food_container', 'tea_bag', 'trash_bag']
+
+roboflow:
+  workspace: home-uzlr0
+  project: my-first-project-6iqq0
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/home-uzlr0/my-first-project-6iqq0/dataset/4
