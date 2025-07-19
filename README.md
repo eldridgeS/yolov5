@@ -2,7 +2,7 @@
 
 Welcome to this fork, which documents a practical application built upon the powerful YOLOv5 framework. This project focuses on a waste sorting web application, leveraging YOLOv5's object detection capabilities. Below, you'll find a summary of the core YOLOv5 components that app.py utilizes, providing essential context for its functionality.
 
-!(Waste Detector website)[waste_detector.png]
+![Waste Detector website](waste_detector.png)
 ## **Background**
 
 As a college student living on campus, I often find myself unable to determine whether certain waste, like the tons of different types of plastics, can be put into the recycling bin. Therefore, I sought to fix this problem for myself. Initially, my idea was to construct an automatic recycling machine, complete with a mechanical arm, to sort my trash and recyclables. This led me to consider leveraging YOLOv5's object detection capabilities to identify different types of waste. However, I soon realized that building such a complex mechatronic system was beyond my current experience. Consequently, I shifted focus to a more feasible approach: developing a locally hosted web application.   
