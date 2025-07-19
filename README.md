@@ -1,6 +1,7 @@
 # **My YOLOv5 Application: app.py**
 
 Welcome to this fork, which documents a practical application built upon the powerful YOLOv5 framework. This project focuses on a waste sorting web application, leveraging YOLOv5's object detection capabilities. Below, you'll find a summary of the core YOLOv5 components that app.py utilizes, providing essential context for its functionality.
+
 !(Waste Detector website)[waste_detector.png]
 ## **Background**
 
