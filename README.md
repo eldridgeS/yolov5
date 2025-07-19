@@ -1,13 +1,14 @@
 # **My YOLOv5 Application: app.py**
 
 Welcome to this fork, which documents a practical application built upon the powerful YOLOv5 framework. This project focuses on a waste sorting web application, leveraging YOLOv5's object detection capabilities. Below, you'll find a summary of the core YOLOv5 components that app.py utilizes, providing essential context for its functionality.
+Watch the demonstration: https://www.youtube.com/watch?v=w0kHhLwCxLQ
 
 ![Waste Detector website](waste_detector.png)
-## **Background**
 
+## **Background**
 As a college student living on campus, I often find myself unable to determine whether certain waste, like the tons of different types of plastics, can be put into the recycling bin. Therefore, I sought to fix this problem for myself. Initially, my idea was to construct an automatic recycling machine, complete with a mechanical arm, to sort my trash and recyclables. This led me to consider leveraging YOLOv5's object detection capabilities to identify different types of waste. However, I soon realized that building such a complex mechatronic system was beyond my current experience. Consequently, I shifted focus to a more feasible approach: developing a locally hosted web application.   
 Given my background in web design, this solution seemed more achievable and offered the added benefit of mobile accessibility, allowing users to simply upload an image from their phones. For the image data, I sourced nearly 1500 images, about 50 per class, from Alistair King's "Recyclable and Household Waste Classification" dataset on Kaggle. I then used Roboflow to label these images, splitting them into approximately 80% for training, 10% for validation, and 10% for testing, also employing active learning to efficiently label unsorted images. Despite using active learning, I still ended up manually labeling almost all 1500 images myself; in hindsight, I would have reduced the number of classes and focused on a smaller subset, and for future labeling tasks, I'd definitely work in a team as Roboflow allows. The resulting YOLOv5 model performed decently, but optimizing it for GPU inference proved challenging as I was unable to find compatible PyTorch wheels or Docker images for the newest Jetson Orin Nano JetPack 6.0 GA R36.4.3 Python 3.10 cuDNN 9.3 (as of writing), forcing me to optimize solely for CPU using ONNX. With the model ready, I developed the web application using Python, Flask, and HTML.   
-The final product is a low-power server (running on the Jetson Orin Nano) capable of identifying waste types and providing proper disposal instructions. Interestingly, the model excels at detecting aerosol cans because that is the first class alphabetically in my dataset and as a result was always the first thing I labelled, hence when I had to most energy and motivation to do so.
+The final product is a inituitive, user-friendly web application running on a low-power Jetson Orin Nano capable of identifying waste types and providing proper disposal instructions. Interestingly, the model excels at detecting aerosol cans, because that is the first class alphabetically in my dataset and as a result was always the first thing I labelled, hence when I had to most energy and motivation to do so.
 
 ## **Workflow**
 
